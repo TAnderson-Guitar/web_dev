@@ -2,10 +2,15 @@
 <html lang="en">
     <head>
         <title>Simple Interactive Webpage</title>
+        <script>
+           function changeText() {
+                document.getElementById('message').innerHTML = "You clicked the button";
+           }
+        </script>
     </head>
     <body>
         <h2>Click the button to see what happens:</h2>
-        <p>Download more ram</p>
-        <button>Download Start</button>
+        <p id="message"></p>Download more ram</p>
+        <button onclick="changeText()">Download Start</button>
     </body>
 </html>
